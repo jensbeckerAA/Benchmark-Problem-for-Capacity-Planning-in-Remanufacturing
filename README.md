@@ -1,8 +1,6 @@
-# Benchmark Instance – Capacity Planning in Remanufacturing
+Benchmark Problem for Capacity Planning in Remanufacturing
 
-**Case:** 3 Product Variants · T = 20 Shifts · S = 10 Stations
-
----
+Case: 3 Product Variants · T = 20 Shifts · S = 10 Stations
 
 ## File Overview
 
@@ -20,8 +18,6 @@
 | `reman_share_bounds.csv` | z_{g,v} bounds per product |
 | `parameters_scalar.csv` | Scalar parameters (T, S, M, shift duration, …) |
 
----
-
 ## Key Design Choices
 
 - **CG15** – actual generation, growing demand (avg 15 u/shift),
@@ -32,8 +28,6 @@
 - Station **s=3**: cross-category flexibility (PTran + p_sort_parts)
 - Station **s=6**: cross-category flexibility (PInsp + p_test_final)
 
----
-
 ## Process Categories
 
 | Category | Stations | Processes |
@@ -41,8 +35,6 @@
 | PTran (Transformer) | 1, 2, 3 | disassembly, assembly, screwing, milling turning, additiv processes
 | PInsp (Inspection) | 4, 5, 6 | visual
 | PManu (Manual) | 7, 8, 9, 10 | fallback for assembly, dissasembly, screwing, drilling |
-
----
 
 ## Intralogistics
 
