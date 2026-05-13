@@ -1,0 +1,6 @@
+parameter,value,unit,description
+T,20,shifts,Planning horizon
+S,10,stations,Total number of stations
+M,4,processes,Max processes per station per period
+shift_duration,480,minutes,Duration of one shift (8h)
+station_grid_spacing,3.0,metres,Distance between adjacent grid nodes
