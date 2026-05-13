@@ -1,0 +1,4 @@
+product,z_min,z_max,description
+CG15,0.50,0.90,Min/max share of demand fulfilled by remanufacturing
+WSG14,0.30,0.80,Min/max share of demand fulfilled by remanufacturing
+WSG15,0.60,1.00,Min/max share of demand fulfilled by remanufacturing

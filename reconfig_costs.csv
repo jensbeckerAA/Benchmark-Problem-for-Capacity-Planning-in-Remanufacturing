@@ -1,0 +1,4 @@
+parameter,cost_eur,time_min,description
+dow,150,30,Cost per station deactivated (downsizing)
+ass,200,45,Cost per station activated (assembly)
+reco,80,20,Cost per station reconfigured (process set changed)
