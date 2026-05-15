@@ -1,2 +1,2 @@
-product,z_min,z_max,description
+variant,z_min,z_max,description
 CG15,0.50,0.90,Min/max share of demand fulfilled by remanufacturing
