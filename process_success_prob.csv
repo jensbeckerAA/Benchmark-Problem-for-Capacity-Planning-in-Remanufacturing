@@ -1,4 +1,4 @@
-process_name,product,success_prob
+process_name,variant,success_prob
 p_tran_01,CG15,0.93
 p_tran_02,CG15,0.97
 p_tran_03,CG15,0.99
