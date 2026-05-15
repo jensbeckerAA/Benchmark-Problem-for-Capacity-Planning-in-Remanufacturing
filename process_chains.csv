@@ -1,4 +1,4 @@
-product,step,category,primary_process,fallback_process
+variant,step,category,primary_process,fallback_process
 CG15,1,PInsp,p_insp_01,
 CG15,2,PInsp,p_insp_03,
 CG15,3,PInsp,p_insp_02,p_insp_05
