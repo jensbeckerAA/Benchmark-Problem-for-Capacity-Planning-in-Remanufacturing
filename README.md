@@ -1,6 +1,6 @@
 Benchmark Problem for Capacity Planning in Remanufacturing
 
-Case: 3 Product Variants · T = 20 Shifts · S = 10 Stations
+Case: 3 Product Variants · T = 10 Shifts · S = 10 Stations
 
 ## File Overview
 
@@ -38,12 +38,4 @@ Case: 3 Product Variants · T = 20 Shifts · S = 10 Stations
 
 ## Intralogistics
 
-Stations are placed on a **5 × 2 grid** with 3 m spacing.  
-Manhattan distance: `d(s1,s2) = (|col1−col2| + |row1−row2|) × 3 m`
-
-| s1 | s2 | dist (m) |
-|----|----|---------|
-| 1 | 2 | 3.0 |
-| 1 | 6 | 3.0 |
-| 1 | 10 | 15.0 |
-| 5 | 10 | 3.0 |
+Station positions and distances are instance-specific and defined externally. The benchmark is layout-agnostic to allow broad applicability across different shopfloor configurations.
