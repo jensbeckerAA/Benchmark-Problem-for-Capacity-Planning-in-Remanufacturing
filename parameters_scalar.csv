@@ -1,0 +1,5 @@
+parameter,value,unit,description
+T,10,shifts,Planning horizon
+S,10,stations,Total number of stations
+M,4,processes,Max processes per station per period
+shift_duration,480,minutes,Duration of one shift (8h)
