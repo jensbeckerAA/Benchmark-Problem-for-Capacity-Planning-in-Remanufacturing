@@ -13,6 +13,7 @@
 | `process_flow_table.csv` | Manufacturing process as flow chart with subsequent processes|
 | `processes.csv` | All 16 processes with category and stochastic duration |
 | `reconfig_costs.csv` | remproc / addproc / stat costs and times |
+| `time_lags.csv` | Stochastic durationremproc for time_lags |
 ---
 
 ## Key Design Choices
