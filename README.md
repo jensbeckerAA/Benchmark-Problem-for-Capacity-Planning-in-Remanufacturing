@@ -1,6 +1,6 @@
 # Benchmark Instance – Capacity Planning in Remanufacturing
 
-**Case:** 1 Product, G = 2 Generation, V = 2 Variants · T = 10 Shifts · S = 10 Stations
+**Case:** 1 Product, G = 2 Generation, V = 1 Variant · T = 10 Shifts · S = 10 Stations
 ---
 
 ## File Overview
