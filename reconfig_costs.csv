@@ -1,0 +1,4 @@
+parameter,cost_eur,time_min,description
+remproc,150,30,Cost per station for removing process
+addproc,200,45,Cost per station for adding process
+stat,80,20,Cost per station reconfigured (process set changed)

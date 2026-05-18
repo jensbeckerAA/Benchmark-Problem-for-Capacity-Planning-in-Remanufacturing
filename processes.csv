@@ -1,0 +1,17 @@
+process_name,category,duration_mean_min,duration_std_min
+p_tran_01,PTran,8.0,1.2
+p_tran_02,PTran,14.0,2.5
+p_tran_03,PTran,5.0,0.7
+p_tran_04,PTran,9.0,1.5
+p_tran_05,PTran,4.0,0.5
+p_insp_01,PInsp,3.5,0.6
+p_insp_02,PInsp,10.0,1.5
+p_insp_03,PInsp,6.0,0.9
+p_insp_04,PInsp,9.0,1.5
+p_insp_05,PInsp,7.5,1.2
+p_manu_01,PManu,15.0,2.5
+p_manu_02,PManu,22.0,3.5
+p_manu_03,PManu,12.0,2.0
+p_manu_04,PManu,8.0,1.3
+p_manu_05,PManu,6.0,1.0
+p_manu_06,PManu,12.0,2.0
