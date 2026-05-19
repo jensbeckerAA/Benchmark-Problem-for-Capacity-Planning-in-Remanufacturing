@@ -1,5 +1,5 @@
 node,precedences,process, process category, average procedding time [min], Std. Deviation [min]
-start,n1,,,
+start,n1,,,,
 n1,n2,Inspection 1, PInsp,1
 n2,n3, Disassembly / Screwing 1, PTran,2
 n2,n4, Milling 1, PTran,2
