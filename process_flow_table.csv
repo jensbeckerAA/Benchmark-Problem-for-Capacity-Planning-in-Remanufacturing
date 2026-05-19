@@ -1,19 +1,24 @@
 node,precedences,process, process category
 start,n1,,
 n1,n2,Inspection 1, PInsp
-n2,n3 & n4, Milling & Disassembly / Screwing, PTran
+n2,n3, Disassembly / Screwing, PTran
+n2,n4, Milling, PTran
 n3,n5,Disassembly / Screwing, PTran
 n4,n5,Drilling (Manual), PManu
 n5,n6,Inspection 1, PInsp
-n6,n7 & n8 & n9,Disassembly / Screwing & Milling & Milling (Manual), PTran & PManu
+n6,n7 Disassembly / Screwing, PTran
+n6,n8,Milling, PTran
+n6,n9,Milling (Manual),PManu
 n7,n9,Disassembly / Screwing (Manual), PTran & PManu
 n8,n9,Drilling (Manual) & Thermoprocess (Manual), PManu
 n9,n10,Inspection 2, PInsp
-n10,n11 & n13,Milling & Turning, PTran
+n10,n11 Milling, PTran
+n10,n13,Turning, PTran
 n11,n12,Additiv, PTran
 n12,n13,Milling, PTran
 n13,n14,Inspection 3, PIns
-n14,n15 & n16, Assembly / Screwing & Assembly / Screwing (Manual), PTran & PManu
-n15,n16,Assembly / Screwing (Manual), PTran & PManu
+n14,n15, Assembly / Screwing ,PTran
+n14,n16, Assembly / Screwing (Manual),PManu
+n15,n16,Assembly / Screwing (Manual), PManu
 n16,n17,Inspection 4, PIns
 n17,end,,
