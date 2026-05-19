@@ -1,0 +1,19 @@
+Add Process,Additiv,Drilling 2 (manual),Drilling 1 (manual),diassembly screwing 2,diassembly screwing 2,assembly screwing 1,diassembly screwing 1 (manual),diassembly screwing 2 (manual),Milling 1,Milling 2,Milling 3,Milling 4,milling (manual),Thermoprocess (manuell),assembly screwing 1 (manuell),assembly screwing 2 (manuell),Turning
+Additiv,0,-,-,1000,1000,1000,-,-,20000,20000,20000,20000,-,-,-,-,4000
+Drilling 1 (manual),10000,0,100,-,-,-,200,200,-,-,-,-,1000,1000,1000,1000,-
+Drilling 2 (manual),10000,100,0,-,-,-,200,200,-,-,-,-,1000,1000,1000,1000,-
+diassembly screwing 2000,10000,-,-,0,100,100,-,-,20000,20000,20000,20000,-,-,-,-,4000
+diassembly screwing 2000,10000,-,-,100,0,100,-,-,20000,20000,20000,20000,-,-,-,-,4000
+assembly screwing 1000,100000,-,-,0.1,0.1,0,-,-,20,20,20,20,-,-,-,-,4
+diassembly screwing 1 (manual),100,0.2,0.2,-,-,-,0,0.1,-,-,-,-,1,1,1,1,-
+diassembly screwing 2 (manual),100,0.2,0.2,-,-,-,0.1,0,-,-,-,-,1,1,1,1,-
+Milling 1,100,-,-,1,1,1,-,-,0,0.1,0.1,0.1,-,-,-,-,4
+Milling 2,100,-,-,1,1,1,-,-,0.1,0,0.1,0.1,-,-,-,-,4
+Milling 3,100,-,-,1,1,1,-,-,0.1,0.1,0,0.1,-,-,-,-,4
+Milling 4,100,-,-,1,1,1,-,-,0.1,0.1,0.1,0,-,-,-,-,4
+Milling (manual),100000,400,400,-,-,-,400,400,-,-,-,-,-,-,-,-,-
+Thermoprocess (manuell),100000,400,400,-,-,-,4000,4000,-,-,-,-,0,0,1000,1000,-
+assembly screwing 1 (manuell),100000,400,400,-,-,-,400,400,-,-,-,-,1000,1000,0,0,-
+assembly screwing 2000 (manuell),100000,400,400,-,-,-,400,400,-,-,-,-,1000,1000,0,0,-
+Turning,100000,-,-,1000,1000,1000,-,-,20000,20000,20000,20000,-,-,-,-,4000
+Empty,100000,400,400,1000,1000,1000,400,400,20000,20000,20000,20000,1000,1000,1000,1000,4000
