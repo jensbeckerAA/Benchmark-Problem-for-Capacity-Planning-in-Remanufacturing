@@ -1,18 +1,18 @@
 Remove Process,Additiv,Drilling 1 (manual),Drilling 2 (manual),diassembly screwing 2,diassembly screwing 2,assembly screwing 1,diassembly screwing 1 (manual),diassembly screwing 2 (manual),Milling 1,Milling 2,Milling 3,Milling 4,milling (manual),Thermoprocess (manuell),assembly screwing 1 (manuell),assembly screwing 2 (manuell),Turning,Empty
-Additiv,-,-,-,90,90,90,-,-,90,90,90,90,-,-,-,-,90,90
-Drilling 1 (manual),-,-,0.1,-,-,-,0.1,0.1,-,-,-,-,0.36,0.36,0.36,0.36,-,0.36
-Drilling 2 (manual),-,0.1,-,-,-,-,0.1,0.1,-,-,-,-,0.36,0.36,0.36,0.36,-,0.36
-diassembly screwing 1,0.9,-,-,-,0.1,0.1,-,-,0.9,0.9,0.9,0.9,-,-,-,-,0.9,0.9
-diassembly screwing 2,0.9,-,-,0.1,-,0.1,-,-,0.9,0.9,0.9,0.9,-,-,-,-,0.9,0.9
-assembly screwing 1,0.9,-,-,0.1,0.1,-,-,-,0.9,0.9,0.9,0.9,-,-,-,-,0.9,0.9
-diassembly screwing 1 (manual),-,0.36,0.36,-,-,-,-,-,-,-,-,-,0.36,0.36,0.36,0.36,-,0.36
-diassembly screwing 2 (manual),-,0.36,0.36,-,-,-,-,-,-,-,-,-,0.36,0.36,0.36,0.36,-,0.36
-Milling 1,9,-,-,9,9,9,-,-,-,-,-,-,-,-,-,-,9,9
-Milling 2,9,-,-,9,9,9,-,-,-,-,-,-,-,-,-,-,9,9
-Milling 3,9,-,-,9,9,9,-,-,-,-,-,-,-,-,-,-,9,9
-Milling 4,9,-,-,9,9,9,-,-,-,-,-,-,-,-,-,-,9,9
-Milling (manual),-,2,2,-,-,-,2,2,-,-,-,-,-,2,2,2,-,2
-Thermoprocess (manuell),-,0.9,0.9,-,-,-,0.9,0.9,-,-,-,-,0.9,-,0.9,0.9,-,0.9
-assembly screwing 1 (manuell),-,0.9,0.9,-,-,-,0.9,0.9,-,-,-,-,0.9,0.9,-,-,-,0.9
-assembly screwing 2 (manuell),-,0.9,0.9,-,-,-,0.9,0.9,-,-,-,-,0.9,0.9,-,-,-,0.9
-Turning 1,2,-,-,2,2,2,-,-,2,2,2,2,-,-,-,-,-,2
+Additiv;;;;90000;90000;90000;;#WERT!;90000;90000;90000;90000;;;;;90000;90000;
+Drilling 1 (manual);;;100;;;;100;100;;;;;360;360;360;360;;360;
+Drilling 2 (manual);;100;;;;;100;100;;;;;360;360;360;360;;360;
+diassembly screwing 1;900;;;;100;100;;;900;900;900;900;;;;;900;900;
+diassembly screwing 2;900;;;100;;100;;;900;900;900;900;;;;;900;900;
+assembly screwing 1;900;;;100;100;;;;900;900;900;900;;;;;900;900;
+diassembly screwing 1 (manual);;360;360;;;;;;;;;;360;360;360;360;;360;
+diassembly screwing 2 (manual);;360;360;;;;;;;;;;360;360;360;360;;360;
+Milling 1;9000;;;9000;9000;9000;;;;;;;;;;;9000;9000;
+Milling 2;9000;;;9000;9000;9000;;;;;;;;;;;9000;9000;
+Milling 3;9000;;;9000;9000;9000;;;;;;;;;;;9000;9000;
+Milling 4;9000;;;9000;9000;9000;;;;;;;;;;;9000;9000;
+Milling (manual);;2000;2000;;;;2000;2000;;;;;;2000;2000;2000;;2000;
+Thermoprocess (manuell);;900;900;;;;900;900;;;;;900;;900;900;;900;
+assembly screwing 1 (manuell);;900;900;;;;900;900;;;;;900;900;;;;900;
+assembly screwing 2 (manuell);;900;900;;;;900;900;;;;;900;900;;;;900;
+Turning 1;2000;;;2000;2000;2000;;;2000;2000;2000;2000;;;;;;2000;
