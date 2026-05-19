@@ -1,5 +1,5 @@
-.Manual,Inspection,Transformer cell,Empty
+-,Manual,Inspection,Transformer cell,Empty
 Manual,0,70,50,0
 Inspection,30,0,70,0
 Transformer cell,20,90,0,0
-Empty;10,60,40,0
+Empty,10,60,40,0
