@@ -9,7 +9,7 @@ n5,n6,Inspection 1, PInsp
 n6,n7,Disassembly / Screwing, PTran
 n6,n8,Milling, PTran
 n6,n9,Milling (Manual),PManu
-n7,n9,Disassembly / Screwing (Manual), PTran & PManu
+n7,n9,Disassembly / Screwing (Manual), PManu
 n8,n9,Drilling (Manual), PManu
 n8,n9,Thermoprocess (Manual), PManu
 n9,n10,Inspection 2, PInsp
