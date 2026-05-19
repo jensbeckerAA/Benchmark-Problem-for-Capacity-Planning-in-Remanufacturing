@@ -1,6 +1,6 @@
 Remove Process,Additiv,Drilling 1 (manual),Drilling 2 (manual),diassembly screwing 2,diassembly screwing 2,assembly screwing 1,diassembly screwing 1 (manual),diassembly screwing 2 (manual),Milling 1,Milling 2,Milling 3,Milling 4,milling (manual),Thermoprocess (manuell),assembly screwing 1 (manuell),assembly screwing 2 (manuell),Turning,Empty
 Additiv,Drilling 1 (manual),Drilling 2 (manual),diassembly screwing 2,diassembly screwing 2,assembly screwing 1,diassembly screwing 1 (manual),diassembly screwing 2 (manual),Milling 1,Milling 2,Milling 3,Milling 4,milling (manual),Thermoprocess (manuell),assembly screwing 1 (manuell),assembly screwing 2 (manuell),Turning,Leer,
-Additiv,,,,90000,90000,90000,,#WERT!,90000,90000,90000,90000,,,,,90000,90000,
+Additiv,,,,90000,90000,90000,,,90000,90000,90000,90000,,,,,90000,90000,
 Drilling 1 (manual),,,100,,,,100,100,,,,,360,360,360,360,,360,
 Drilling 2 (manual),,100,,,,,100,100,,,,,360,360,360,360,,360,
 diassembly screwing 1,900,,,,100,100,,,900,900,900,900,,,,,900,900,
