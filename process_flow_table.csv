@@ -17,9 +17,9 @@ n10,n11,Milling 3, PTran,2,2
 n10,n13,Turning 1, PTran,2,2
 n11,n12,Additiv 1, PTran,3,3
 n12,n13,Milling 4, PTran,2,2
-n13,n14,Inspection 3, PIns,1,1
+n13,n14,Inspection 3, PInsp,1,1
 n14,n15, Assembly / Screwing 1,PTran,2,2
 n14,n16, Assembly / Screwing (Manual) 1,PManu,2,2
 n15,n16,Assembly / Screwing (Manual) 2, PManu,2,2
-n16,n17,Inspection 4, PIns,1,1
+n16,n17,Inspection 4, PInsp,1,1
 n17,end,,,,
