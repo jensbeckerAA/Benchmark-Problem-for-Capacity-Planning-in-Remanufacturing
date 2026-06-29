@@ -1,5 +1,5 @@
 node,precedences,process,process_name,process_category
-start,n1,,,,
+start,n1,,,
 n1,n2,Inspection 1,p_insp_01,PInsp
 n2,n3,Disassembly / Screwing 1,p_tran_01,PTran
 n2,n4,Milling 1,p_tran_02,PTran
