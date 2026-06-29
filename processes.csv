@@ -9,9 +9,9 @@ p_insp_02,PInsp,4.0,1.0
 p_insp_03,PInsp,2.0,0.8
 p_insp_04,PInsp,4.0,1.0
 p_insp_05,PInsp,3.0,1.5
-p_manu_01,PManu,2.0,1.0
+p_manu_01,PManu,2.0,0.8
 p_manu_02,PManu,3.0,2.0
-p_manu_03,PManu,2.0,1.0
-p_manu_04,PManu,2.0,1.0
-p_manu_05,PManu,2.0,1.0
-p_manu_06,PManu,2.0,1.0
+p_manu_03,PManu,2.0,0.8
+p_manu_04,PManu,2.0,0.8
+p_manu_05,PManu,2.0,0.8
+p_manu_06,PManu,2.0,0.8
