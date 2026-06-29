@@ -1,25 +1,25 @@
 node,precedences,process, process category, average processing time [min], Std. Deviation [min]
 start,n1,,,,
-n1,n2,Inspection 1, PInsp,1,1
-n2,n3, Disassembly / Screwing 1, PTran,2,2
-n2,n4, Milling 1, PTran,2,2
-n3,n5,Disassembly / Screwing (Manual) 1, PManu,2,2
+n1,n2,Inspection 1,Insp,1,1
+n2,n3,Disassembly/Screwing 1, PTran,2,2
+n2,n4,Milling 1,PTran,2,2
+n3,n5,Disassembly/Screwing (Manual) 1,PManu,2,2
 n4,n5,Drilling (Manual) 1, PManu,2,2
-n5,n6,Inspection 1, PInsp,1,1
-n6,n7,Disassembly / Screwing 2, PTran,2,2
-n6,n8,Milling 2, PTran,2,2
+n5,n6,Inspection 1,PInsp,1,1
+n6,n7,Disassembly / Screwing 2,PTran,2,2
+n6,n8,Milling 2,PTran,2,2
 n6,n9,Milling (Manual) 1,PManu,2,2
-n7,n9,Disassembly / Screwing (Manual) 2, PManu,2,2
-n8,n9,Drilling (Manual) 2, PManu,2,2
-n8,n9,Thermoprocess (Manual) 1, PManu,2,2
-n9,n10,Inspection 2, PInsp,1,1
-n10,n11,Milling 3, PTran,2,2
-n10,n13,Turning 1, PTran,2,2
-n11,n12,Additiv 1, PTran,3,3
-n12,n13,Milling 4, PTran,2,2
-n13,n14,Inspection 3, PInsp,1,1
+n7,n9,Disassembly/Screwing (Manual) 2,PManu,2,2
+n8,n9,Drilling (Manual) 2,PManu,2,2
+n8,n9,Thermoprocess (Manual) 1,PManu,2,2
+n9,n10,Inspection 2,PInsp,1,1
+n10,n11,Milling 3,PTran,2,2
+n10,n13,Turning 1,PTran,2,2
+n11,n12,Additiv 1,PTran,3,3
+n12,n13,Milling 4,PTran,2,2
+n13,n14,Inspection 3,PInsp,1,1
 n14,n15, Assembly / Screwing 1,PTran,2,2
 n14,n16, Assembly / Screwing (Manual) 1,PManu,2,2
 n15,n16,Assembly / Screwing (Manual) 2, PManu,2,2
-n16,n17,Inspection 4, PInsp,1,1
+n16,n17,Inspection 4,PInsp,1,1
 n17,end,,,,
