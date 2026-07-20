@@ -16,11 +16,6 @@
 | `time_lags.csv` | Stochastic durationremproc for time_lags |
 ---
 
-## Key Design Choices
-
-- Core availability is intentionally **below demand** → forces mix of remanufacturing + linear production
----
-
 ## Process Categories
 
 | Category | Stations | Processes |
