@@ -7,7 +7,7 @@
 
 | File | Description |
 |------|-------------|
-| `cores.csv` | Core availability I_t per variant per period |
+| `inpu;cores.csv` | Core availability I_t per variant per period |
 | `demand.csv` | Demand D_t per variant per period |
 | `parameters_scalar.csv` | Scalar parameters (T, S, M, shift duration) |
 | `process_flow_table.csv` | Manufacturing process as flow chart with subsequent processes|
@@ -19,7 +19,7 @@
 ## Key Design Choices
 
 - **Generation 2** – current generation, growing demand (avg 15 u/shift)
-- Core availability is intentionally **below demand** → forces mix of remanufacturing + linear production
+- Core availability is intentionally **above demand** → forces mix of remanufacturing + linear production
 ---
 
 ## Process Categories
