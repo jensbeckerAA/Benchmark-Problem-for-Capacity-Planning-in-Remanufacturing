@@ -18,8 +18,7 @@
 
 ## Key Design Choices
 
-- **Generation 2** – current generation, growing demand (avg 15 u/shift)
-- Core availability is intentionally **above demand** → forces mix of remanufacturing + linear production
+- Core availability is intentionally **below demand** → forces mix of remanufacturing + linear production
 ---
 
 ## Process Categories
