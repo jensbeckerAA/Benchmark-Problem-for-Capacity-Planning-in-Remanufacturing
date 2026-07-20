@@ -18,11 +18,11 @@
 
 ## Process Categories
 
-| Category | Stations | Processes |
-|----------|----------|-----------|
-| PTran (Transformer) | 1, 2, 3 | p_tran_01 – p_tran_05: disassembly, assembly, screwing, milling/turning, additive processes |
-| PInsp (Inspection) | 4, 5, 6 | p_insp_01 – p_insp_05: visual inspection |
-| PManu (Manual) | 7, 8, 9, 10 | p_manu_01 – p_manu_06: assembly, disassembly, screwing, drilling |
+| Category | Processes |
+|----------|-----------|
+| PTran (Transformer) | p_tran_01 – p_tran_05: disassembly, assembly, screwing, milling/turning, additive processes |
+| PInsp (Inspection) | p_insp_01 – p_insp_05: visual inspection |
+| PManu (Manual) | p_manu_01 – p_manu_06: assembly, disassembly, screwing, drilling |
 
 Each station is assigned to **exactly one** category.
 
