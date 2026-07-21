@@ -10,7 +10,7 @@ The problem is highly abstract, and many values are assumed. This is a simple, i
 
 | File | Description |
 |------|-------------|
-| `inpu;cores.csv` | Core availability I_t per variant per period |
+| `input;cores.csv` | Core availability I_t per variant per period |
 | `demand.csv` | Demand D_t per variant per period |
 | `parameters_scalar.csv` | Scalar parameters (T, S, M, shift duration) |
 | `process_flow_table.csv` | Manufacturing process as flow chart with subsequent processes (The probabilities represent the average transition probability.)|
