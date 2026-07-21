@@ -2,6 +2,9 @@
 
 **Case:** 1 Product, G = 2 Generation, V = 1 Variant per generation, T = 10 Shifts · S = 10 Stations
 ---
+## General
+The problem is highly abstract, and many values are assumed. This is a simple, illustrative example.
+---
 
 ## File Overview
 
@@ -10,9 +13,9 @@
 | `inpu;cores.csv` | Core availability I_t per variant per period |
 | `demand.csv` | Demand D_t per variant per period |
 | `parameters_scalar.csv` | Scalar parameters (T, S, M, shift duration) |
-| `process_flow_table.csv` | Manufacturing process as flow chart with subsequent processes|
-| `processes.csv` | All 16 processes with category and stochastic duration |
-| `reconfig_costs.csv` | remproc / addproc / stat costs and times |
+| `process_flow_table.csv` | Manufacturing process as flow chart with subsequent processes (The probabilities represent the average transition probability.)|
+| `processes.csv` | All 16 processes with category and stochastic duration (exponential) |
+| `reconfig_costs.csv` | remproc / addproc / stat costs and times (Purely placeholder costs; no actual machine or tooling costs) |
 | `time_lags.csv` | Stochastic durationremproc for time_lags |
 ---
 
