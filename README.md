@@ -6,6 +6,9 @@
 The problem is highly abstract, and many values are assumed. This is a simple, illustrative example.
 ---
 
+## Time lags
+For all d_{i;j}=0
+
 ## File Overview
 
 | File | Description |
@@ -16,7 +19,6 @@ The problem is highly abstract, and many values are assumed. This is a simple, i
 | `process_flow_table.csv` | Manufacturing process as flow chart with subsequent processes (The probabilities represent the average transition probability.)|
 | `processes.csv` | All 16 processes with category and stochastic duration (exponential) |
 | `reconfig_costs.csv` | remproc / addproc / stat costs and times (Purely placeholder costs; no actual machine or tooling costs) |
-| `time_lags.csv` | Stochastic durationremproc for time_lags |
 ---
 
 ## Process Categories
