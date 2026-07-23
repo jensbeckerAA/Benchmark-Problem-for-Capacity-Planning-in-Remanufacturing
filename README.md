@@ -24,6 +24,7 @@ The problem is highly abstract, and many values are assumed. This is a simple, i
 | PTran (Transformer) | p_tran_01 – p_tran_05: disassembly / screwing, assembly / screwing, milling, turning, additive processes |
 | PInsp (Inspection) | p_insp_01 – p_insp_05: visual inspection |
 | PManu (Manual) | p_manu_01 – p_manu_05: assembly/screwing, disassembly/screwing, milling, drilling, thermoprocess |
+---
 Each station is assigned to **exactly one** category.
 
 ## Time lags
