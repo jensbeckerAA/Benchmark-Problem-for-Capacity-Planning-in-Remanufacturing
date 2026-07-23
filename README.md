@@ -17,7 +17,7 @@ For all d_{i;j}=0
 | `demand.csv` | Demand D_t per variant per period |
 | `parameters_scalar.csv` | Scalar parameters (T, S, M, shift duration) |
 | `process_flow.pdf` | Manufacturing process as flow chart with subsequent processes (The probabilities represent the average transition probability.)|
-| `processes.csv` | All 16 processes with category and stochastic duration (exponential) |
+| `processes.csv` | All 15 processes with category and stochastic duration (exponential) |
 | `reconfig_costs.csv` | remproc / addproc / stat costs and times (Purely placeholder costs; no actual machine or tooling costs) |
 ---
 
@@ -25,9 +25,9 @@ For all d_{i;j}=0
 
 | Category | Processes |
 |----------|-----------|
-| PTran (Transformer) | p_tran_01 – p_tran_05: disassembly, assembly, screwing, milling/turning, additive processes |
+| PTran (Transformer) | p_tran_01 – p_tran_05: disassembly / screwing, assembly / screwing, milling, turning, additive processes |
 | PInsp (Inspection) | p_insp_01 – p_insp_05: visual inspection |
-| PManu (Manual) | p_manu_01 – p_manu_06: assembly, disassembly, screwing, drilling |
+| PManu (Manual) | p_manu_01 – p_manu_05: assembly/screwing, disassembly/screwing, milling, drilling, thermoprocess |
 
 Each station is assigned to **exactly one** category.
 
