@@ -1,6 +1,0 @@
-time lags,duration_mean_min,duration_std_min
-d^{\min}_{\sigma;i},180,480
-d^{\min}_{i;j},3.5,20
-d^{\min}_{j;k},2.4,4.7
-d^{\min}_{k;\rho},4,6
-d^{\min}_{\rho;\phi},180,600
