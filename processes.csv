@@ -4,11 +4,11 @@ Additiv,p_tran_02,5.0,1.0
 Milling,p_tran_03,1.5,0.3
 Dissasemlby/Screwing,p_tran_04,3.0,0.7
 Turning,p_tran_05,1.0,0.2
-Insp_1,p_insp_01,1.0,0.3
-Insp_2,p_insp_02,4.0,1.0
-Insp_3,p_insp_03,2.0,0.8
-Insp_4,p_insp_04,4.0,1.0
-Insp_5,p_insp_05,3.0,1.5
+Inspection_1,p_insp_01,1.0,0.3
+Inspection_2,p_insp_02,4.0,1.0
+Inspection_3,p_insp_03,2.0,0.8
+Inspection_4,p_insp_04,4.0,1.0
+Inspection_5,p_insp_05,3.0,1.5
 Assembly/Screwing Manual,p_manu_01,2.0,0.8
 Dissasemby/Screwing Manual,p_manu_02,3.0,2.0
 Thermoprocess Manual,p_manu_03,2.0,0.8
