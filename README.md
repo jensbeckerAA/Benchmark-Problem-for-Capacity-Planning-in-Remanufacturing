@@ -16,7 +16,6 @@ The problem is highly abstract, and many values are assumed. This is a simple, i
 | `process_flow.pdf` | Manufacturing process as flow chart with subsequent processes (The probabilities represent the average transition probability.)|
 | `processes.csv` | All 15 processes with category and stochastic duration (exponential) |
 | `reconfig_costs.csv` | remproc / addproc / stat costs and times (Purely placeholder costs; no actual machine or tooling costs) |
----
 
 ## Process Categories
 
@@ -26,7 +25,6 @@ The problem is highly abstract, and many values are assumed. This is a simple, i
 | PInsp (Inspection) | p_insp_01 – p_insp_05: visual inspection |
 | PManu (Manual) | p_manu_01 – p_manu_05: assembly/screwing, disassembly/screwing, milling, drilling, thermoprocess |
 Each station is assigned to **exactly one** category.
----
 
 ## Time lags
 For all d_{i;j}=0
