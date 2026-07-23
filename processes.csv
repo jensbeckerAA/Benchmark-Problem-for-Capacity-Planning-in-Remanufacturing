@@ -1,16 +1,16 @@
 process_name,category,duration_mean_min,duration_std_min
-p_tran_01,Assembly/Screwing,2.0,0.5
-p_tran_02,Additiv,5.0,1.0
-p_tran_03,Milling,1.5,0.3
-p_tran_04,Dissasemlby/Screwing,3.0,0.7
-p_tran_05,Turning,1.0,0.2
-p_insp_01,Insp_1 ,1.0,0.3
-p_insp_02,Insp_2 ,4.0,1.0
-p_insp_03,Insp_3,2.0,0.8
-p_insp_04,Insp_4,4.0,1.0
-p_insp_05,Insp_5,3.0,1.5
-p_manu_01,Assembly/Screwing Manual,2.0,0.8
-p_manu_02,Dissasemby/Screwing Manual,3.0,2.0
-p_manu_03,Thermoprocess Manual,2.0,0.8
-p_manu_04,Drilling Manual,2.0,0.8
-p_manu_05,Milling,2.0,0.8
+Assembly/Screwing,p_tran_01,2.0,0.5
+Additiv,p_tran_02,5.0,1.0
+Milling.p_tran_03,1.5,0.3
+Dissasemlby/Screwing,p_tran_04,3.0,0.7
+Turning,p_tran_05,1.0,0.2
+Insp_1,p_insp_01,1.0,0.3
+Insp_2,p_insp_02,4.0,1.0
+Insp_3,p_insp_03,2.0,0.8
+Insp_4,p_insp_04,4.0,1.0
+Insp_5,p_insp_05,3.0,1.5
+Assembly/Screwing Manual,p_manu_01,2.0,0.8
+Dissasemby/Screwing Manual,p_manu_02,3.0,2.0
+Thermoprocess Manual,p_manu_03,2.0,0.8
+Drilling Manual,p_manu_04,2.0,0.8
+Milling,p_manu_05,2.0,0.8
