@@ -1,14 +1,14 @@
 process_name,category,duration_mean_min,duration_std_min
-p_tran_01,PTran,2.0,0.5
-p_tran_02,PTran,5.0,1.0
-p_tran_03,PTran,1.5,0.3
-p_tran_04,PTran,3.0,0.7
-p_tran_05,PTran,1.0,0.2
-p_insp_01,PInsp,1.0,0.3
-p_insp_02,PInsp,4.0,1.0
-p_insp_03,PInsp,2.0,0.8
-p_insp_04,PInsp,4.0,1.0
-p_insp_05,PInsp,3.0,1.5
+p_tran_01,Assembly/Screwing,2.0,0.5
+p_tran_02,Additiv,5.0,1.0
+p_tran_03,Milling,1.5,0.3
+p_tran_04,Dissasemlby/Screwing,3.0,0.7
+p_tran_05,Turning,1.0,0.2
+p_insp_01,Insp_1 ,1.0,0.3
+p_insp_02,Insp_2 ,4.0,1.0
+p_insp_03,Insp_3,2.0,0.8
+p_insp_04,Insp_4,4.0,1.0
+p_insp_05,Insp_5,3.0,1.5
 p_manu_01,PManu,2.0,0.8
 p_manu_02,PManu,3.0,2.0
 p_manu_03,PManu,2.0,0.8
