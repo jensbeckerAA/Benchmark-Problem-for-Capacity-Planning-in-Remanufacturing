@@ -16,7 +16,7 @@ For all d_{i;j}=0
 | `input_cores.csv` | Core availability I_t per variant per period |
 | `demand.csv` | Demand D_t per variant per period |
 | `parameters_scalar.csv` | Scalar parameters (T, S, M, shift duration) |
-| `process_flow_table.csv` | Manufacturing process as flow chart with subsequent processes (The probabilities represent the average transition probability.)|
+| `process_flow.png` | Manufacturing process as flow chart with subsequent processes (The probabilities represent the average transition probability.)|
 | `processes.csv` | All 16 processes with category and stochastic duration (exponential) |
 | `reconfig_costs.csv` | remproc / addproc / stat costs and times (Purely placeholder costs; no actual machine or tooling costs) |
 ---
