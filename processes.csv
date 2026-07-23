@@ -1,7 +1,7 @@
 process_name,category,duration_mean_min,duration_std_min
 Assembly/Screwing,p_tran_01,2.0,0.5
 Additiv,p_tran_02,5.0,1.0
-Milling.p_tran_03,1.5,0.3
+Milling,p_tran_03,1.5,0.3
 Dissasemlby/Screwing,p_tran_04,3.0,0.7
 Turning,p_tran_05,1.0,0.2
 Insp_1,p_insp_01,1.0,0.3
