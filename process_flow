@@ -1,0 +1,73 @@
+Inspection 1 (Start)
+goes to Disassembly / Screwing 1 60%
+goes to Milling 1 30%
+
+Disassembly / Screwing 1
+goes to Disassembly / Screwing (Manual) 1 20%
+goes to Inspection 2 79%
+
+Milling 1
+goes to Drilling (Manual) 1 10%
+goes to Inspection 2 90%
+
+Drilling (Manual) 1
+goes to Inspection 2 95%
+
+Disassembly / Screwing (Manual) 1
+goes to Inspection 2 92%
+
+Inspection 2
+goes to Disassembly / Screwing 2 70%
+goes to Milling 2 15%
+goes to Milling (Manual) 1 10%
+
+Disassembly / Screwing 2
+Goes to Disassembly / Screwing (Manual) 2 20%
+Goes to Inspection 3 80%
+
+Milling 2
+Goes to Inspection 3 88%
+Goes to Drilling (Manual) 2 5%
+Goes to Thermoprocess (Manual) 5%
+
+Milling (Manual) 1
+Goes to Inspection 3 95%
+
+Disassembly / Screwing (Manual) 2
+Goes toInspection 3 100%
+
+Drilling (Manual) 2
+Goes to Inspection 3 100%
+
+Thermoprocess (Manual)
+Goes to Inspection 3 100%
+
+Inspection 3
+Goes to Milling 3 68%
+Goes to Turning 27%
+
+Milling 3
+goes to Additiv 90%
+
+Turning
+Goes to Inspection 4 100%
+
+Additiv
+Goes to Milling 4 100%
+
+Milling 4
+Goes to Inspection 4 99%
+
+Inspection 4
+goes to Assembly / Screwing 1 65%
+goes to Assembly / Screwing (Manual) 1 29%
+
+Assembly / Screwing 1
+Goes to Inspection 5 65%
+Goes to Assembly / Screwing (Manual) 2 9%
+
+Assembly / Screwing (Manual) 1
+Goes to Inspection 5 18%
+
+Inspection 5
+Goes to (End) 99%
