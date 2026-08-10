@@ -18,8 +18,9 @@ goes to Inspection 2 92%
 
 Inspection 2
 goes to Disassembly / Screwing 2 70%
-goes to Milling 2 15%
+goes to Milling 2 10%
 goes to Milling (Manual) 1 10%
+Goes to Thermoprocess (Manual) 5%
 
 Disassembly / Screwing 2
 Goes to Disassembly / Screwing (Manual) 2 20%
@@ -28,7 +29,6 @@ Goes to Inspection 3 80%
 Milling 2
 Goes to Inspection 3 88%
 Goes to Drilling (Manual) 2 5%
-Goes to Thermoprocess (Manual) 5%
 
 Milling (Manual) 1
 Goes to Inspection 3 95%
