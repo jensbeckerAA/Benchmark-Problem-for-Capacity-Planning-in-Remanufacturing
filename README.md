@@ -26,10 +26,6 @@ The problem is highly abstract, and many values are assumed. This is a simple, i
 | PManu (Manual) | p_manu_01 – p_manu_05: assembly/screwing, disassembly/screwing, milling, drilling, thermoprocess |
 ---
 Each station is assigned to **exactly one** category.
-
-## Time lags
-For all d_{i;j}=0
-
 ---
 
 ## Intralogistics
