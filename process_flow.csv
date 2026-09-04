@@ -1,0 +1,56 @@
+﻿FROM_STEP;TO_STEP;SHARE
+;;
+;;
+Inspection 1; Disassembly / Screwing 1;0.6
+Inspection 1; Milling 1;0.3
+;;
+Disassembly / Screwing 1; Disassembly / Screwing (Manual) 1;0.2
+Disassembly / Screwing 1; Inspection 2;0.79
+;;
+Milling 1; Drilling (Manual) 1;0.1
+Milling 1; Inspection 2;0.9
+;;
+Drilling (Manual) 1; Inspection 2;0.95
+;;
+Disassembly / Screwing (Manual) 1; Inspection 2;0.92
+;;
+Inspection 2; Disassembly / Screwing 2;0.7
+Inspection 2; Milling 2;0.1
+Inspection 2; Milling (Manual) 1;0.1
+Inspection 2; Thermoprocess (Manual);0.05
+;;
+Disassembly / Screwing 2; Disassembly / Screwing (Manual) 2;0.2
+Disassembly / Screwing 2; Inspection 3;0.8
+;;
+Milling 2; Inspection 3;0.88
+Milling 2; Drilling (Manual) 2;0.05
+;;
+Milling (Manual) 1; Inspection 3;0.95
+;;
+Disassembly / Screwing (Manual) 2;Inspection 3;1
+;;
+Drilling (Manual) 2; Inspection 3;1
+;;
+Thermoprocess (Manual); Inspection 3;1
+;;
+Inspection 3; Milling 3;0.68
+Inspection 3; Turning ;0.27
+;;
+Milling 3; Additiv;0.9
+Milling 3; Inspection 4;0.1
+;;
+Turning; Inspection 4;1
+;;
+Additiv; Milling 4;1
+;;
+Milling 4; Inspection 4;0.99
+;;
+Inspection 4;Assembly / Screwing 1;0.65
+Inspection 4;Assembly / Screwing (Manual) 1;0.29
+;;
+Assembly / Screwing 1;Assembly / Screwing (Manual) 2;0.09
+Assembly / Screwing 1;Inspection 5;0.65
+;;
+Assembly / Screwing (Manual) 1;Inspection 5;0.18
+;;
+Assembly / Screwing (Manual) 2;Inspection 5;0.9
