@@ -340,7 +340,7 @@ def draw_need(D, n_scen):
 
 
 # ======================================================================
-# 4. EIN EXPERIMENT
+# 4. EXPERIMENT
 # ======================================================================
 def make_solver(time_limit):
     """Wählt CBC, falls verfügbar, sonst HiGHS. Pro Solver ein Thread."""
