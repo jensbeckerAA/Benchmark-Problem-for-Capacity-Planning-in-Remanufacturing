@@ -1,7 +1,4 @@
 import os
-
-# Muss vor pandas, PuLP und anderen numerischen Imports gesetzt werden.
-# So startet jeder Worker höchstens einen internen Thread.
 for _v in (
     "OMP_NUM_THREADS",
     "OPENBLAS_NUM_THREADS",
@@ -9,7 +6,6 @@ for _v in (
     "VECLIB_MAXIMUM_THREADS",
 ):
     os.environ[_v] = "1"
-
 import argparse
 import math
 import random
@@ -17,10 +13,8 @@ import re
 import statistics
 from multiprocessing import Pool
 from pathlib import Path
-
 import pandas as pd
 import pulp
-
 
 # ======================================================================
 # 0. KONFIGURATION
