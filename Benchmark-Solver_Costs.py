@@ -1,4 +1,7 @@
 import os
+
+# Muss vor pandas, PuLP und anderen numerischen Imports gesetzt werden.
+# So startet jeder Worker höchstens einen internen Thread.
 for _v in (
     "OMP_NUM_THREADS",
     "OPENBLAS_NUM_THREADS",
@@ -6,6 +9,7 @@ for _v in (
     "VECLIB_MAXIMUM_THREADS",
 ):
     os.environ[_v] = "1"
+
 import argparse
 import math
 import random
@@ -13,8 +17,10 @@ import re
 import statistics
 from multiprocessing import Pool
 from pathlib import Path
+
 import pandas as pd
 import pulp
+
 
 # ======================================================================
 # 0. KONFIGURATION
@@ -340,7 +346,7 @@ def draw_need(D, n_scen):
 
 
 # ======================================================================
-# 4. EXPERIMENT
+# 4. EIN EXPERIMENT
 # ======================================================================
 def make_solver(time_limit):
     """Wählt CBC, falls verfügbar, sonst HiGHS. Pro Solver ein Thread."""
@@ -564,12 +570,17 @@ def run_one(D, objective, n_scen, time_limit, seed):
             for p in proc_ids
         }
 
+    # Stationskosten nur bei Aktivierung/Deaktivierung einer Station
+    # (C_stat * |x_s^{t+1} - x_s^t|): Übergang Empty <-> aktive Kategorie.
+    # Kategoriewechsel zwischen aktiven Stationen kosten hier nichts;
+    # die Modulwechsel werden über add/rem abgebildet.
     reconfig_cost = (
         pulp.lpSum(
             D["c_stat"][(k, k2)] * zz[s][k][k2][t]
             for s in stations
             for k in CATS
             for k2 in CATS
+            if (k == "Empty") != (k2 == "Empty")
             for t in trans
         )
         + pulp.lpSum(
