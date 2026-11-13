@@ -1,5 +1,7 @@
 import os
 
+# Muss vor pandas, PuLP und anderen numerischen Imports gesetzt werden.
+# So startet jeder Worker höchstens einen internen Thread.
 for _v in (
     "OMP_NUM_THREADS",
     "OPENBLAS_NUM_THREADS",
@@ -622,6 +624,7 @@ def run_one(D, objective, n_scen, time_limit, seed):
         )
         return None
 
+    # --- Auswertung je Periode ----------------------------------------
     per = {}
 
     for t in periods:
@@ -650,12 +653,82 @@ def run_one(D, objective, n_scen, time_limit, seed):
             "reman": ru,
         }
 
+    # --- Auswertung der Umkonfigurationen je Übergang t -> t+1 --------
+    # Übergang 0 -> 1 ist der Aufbau (Start: alle Stationen Empty).
+    reconf = {}
+
+    for t in trans:
+        cat_changes = 0
+        activations = 0
+        deactivations = 0
+        stations_changed = 0
+        cost_stat = 0.0
+
+        for s in stations:
+            changed = False
+
+            for k in CATS:
+                for k2 in CATS:
+                    val = pulp.value(zz[s][k][k2][t]) or 0
+
+                    if k != k2 and val > 0.5:
+                        changed = True
+                        cat_changes += 1
+
+                        if k == "Empty":
+                            activations += 1
+                        if k2 == "Empty":
+                            deactivations += 1
+
+                    if (k == "Empty") != (k2 == "Empty"):
+                        cost_stat += D["c_stat"][(k, k2)] * val
+
+            if not changed:
+                changed = any(
+                    (pulp.value(add[s][p][t]) or 0) > 0.5
+                    or (pulp.value(rem[s][p][t]) or 0) > 0.5
+                    for p in proc_ids
+                )
+
+            if changed:
+                stations_changed += 1
+
+        n_add = sum(
+            pulp.value(add[s][p][t]) or 0
+            for s in stations
+            for p in proc_ids
+        )
+        n_rem = sum(
+            pulp.value(rem[s][p][t]) or 0
+            for s in stations
+            for p in proc_ids
+        )
+        cost_mod = sum(
+            c_add[p] * (pulp.value(add[s][p][t]) or 0)
+            + c_rem[p] * (pulp.value(rem[s][p][t]) or 0)
+            for s in stations
+            for p in proc_ids
+        )
+
+        reconf[t] = {
+            "stations_changed": stations_changed,
+            "cat_changes": cat_changes,
+            "activations": activations,
+            "deactivations": deactivations,
+            "add": n_add,
+            "rem": n_rem,
+            "cost_stat": cost_stat,
+            "cost_mod": cost_mod,
+            "cost": cost_stat + cost_mod,
+        }
+
     return {
         "cost": pulp.value(reconfig_cost),
         "idle": pulp.value(idle_expr),
         "reman": sum(v["reman"] for v in per.values()),
         "min_per_core": sum(need[1].values()),
         "per": per,
+        "reconf": reconf,
     }
 
 
@@ -805,6 +878,7 @@ def main(objective):
         f"{m(m(v['util'] for v in r['per'].values()) for r in res):.2f} %"
     )
 
+    # --- Tabelle je Periode -------------------------------------------
     print(
         "\nPeriod | Demand |  z_t  | Active | Avail.min "
         "| Used min | Idle min | Util %"
@@ -824,6 +898,64 @@ def main(objective):
             f"{avg_for('idle'):8.1f} | "
             f"{avg_for('util'):6.2f}"
         )
+
+    # --- Tabelle Umkonfigurationen ------------------------------------
+    print(
+        "\nUmkonfigurationen je Übergang (Mittel über gültige Läufe)"
+    )
+    print(
+        "Übergang | Stat. umkonf. | Kat.-Wechsel | Aktiv. | Deaktiv. "
+        "| Add-Mod. | Rem-Mod. | Kosten Stat. | Kosten Mod. | Kosten ges."
+    )
+
+    for t in sorted(res[0]["reconf"]):
+        def avg_r(key):
+            return m(r["reconf"][t][key] for r in res)
+
+        label = f"{t}->{t + 1}" + (" (Aufbau)" if t == 0 else "")
+
+        print(
+            f"{label:<14s} | "
+            f"{avg_r('stations_changed'):13.2f} | "
+            f"{avg_r('cat_changes'):12.2f} | "
+            f"{avg_r('activations'):6.2f} | "
+            f"{avg_r('deactivations'):8.2f} | "
+            f"{avg_r('add'):8.2f} | "
+            f"{avg_r('rem'):8.2f} | "
+            f"{avg_r('cost_stat'):12,.1f} | "
+            f"{avg_r('cost_mod'):11,.1f} | "
+            f"{avg_r('cost'):11,.1f}"
+        )
+
+    # --- Zusammenfassung: Aufbau vs. laufende Umkonfiguration ---------
+    def total(r, key, include_setup):
+        return sum(
+            v[key]
+            for t, v in r["reconf"].items()
+            if include_setup or t != 0
+        )
+
+    print("\nZusammenfassung Umkonfiguration")
+    print(
+        "Kosten Aufbau (0->1):               "
+        f"{m(r['reconf'][0]['cost'] for r in res):,.1f}"
+    )
+    print(
+        "Kosten Umkonfig. zw. Perioden:      "
+        f"{m(total(r, 'cost', False) for r in res):,.1f}"
+    )
+    print(
+        "Ø Stationen umkonf. (ohne Aufbau):  "
+        f"{m(total(r, 'stations_changed', False) for r in res):.2f}"
+    )
+    print(
+        "Ø Kategoriewechsel (ohne Aufbau):   "
+        f"{m(total(r, 'cat_changes', False) for r in res):.2f}"
+    )
+    print(
+        "Ø Modulwechsel add+rem (ohne Aufbau): "
+        f"{m(total(r, 'add', False) + total(r, 'rem', False) for r in res):.2f}"
+    )
 
 
 if __name__ == "__main__":
