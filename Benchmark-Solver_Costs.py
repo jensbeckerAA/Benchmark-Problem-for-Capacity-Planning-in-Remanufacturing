@@ -1,7 +1,5 @@
 import os
 
-# Muss vor pandas, PuLP und anderen numerischen Imports gesetzt werden.
-# So startet jeder Worker höchstens einen internen Thread.
 for _v in (
     "OMP_NUM_THREADS",
     "OPENBLAS_NUM_THREADS",
