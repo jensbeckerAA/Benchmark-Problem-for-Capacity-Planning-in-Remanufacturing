@@ -1,4 +1,4 @@
-Add Process,Additiv,Drilling 2 (manual),Drilling 1 (manual),disassembly screwing 1,disassembly screwing 2,assembly screwing 1,disassembly screwing 1 (manual),disassembly screwing 2 (manual),Milling 1,Milling 2,Milling 3,Milling 4,milling (manual),Thermoprocess (manual),assembly screwing 1 (manual),assembly screwing 2 (manual),Turning
+Add Process,additiv,drilling 2 (manual),drilling 1 (manual),disassembly screwing 1,disassembly screwing 2,assembly screwing 1,disassembly screwing 1 (manual),disassembly screwing 2 (manual),milling 1,milling 2,milling 3,milling 4,milling (manual),thermoprocess (manual),assembly screwing 1 (manual),assembly screwing 2 (manual),turning
 additiv,0,,,1000,1000,1000,,,20000,20000,20000,20000,,,,,4000
 drilling 1 (manual),100000,0,100,,,,200,200,,,,,1000,1000,1000,1000,
 drilling 2 (manual),100000,100,0,,,,200,200,,,,,1000,1000,1000,1000,
